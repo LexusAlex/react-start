@@ -5,3 +5,6 @@ docker compose run --rm node-cli npm ci
 docker compose run --rm node-cli npm -D jest
 
 Основы react это компоненты
+
+Конечное целевое состояние / декларативное программирование
+Обязательно должен быть возвращен корневой элемент
