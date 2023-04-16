@@ -1,0 +1,7 @@
+docker compose run --rm node-cli npm init
+docker compose run --rm node-cli npm i react
+docker compose run --rm node-cli npm search react
+docker compose run --rm node-cli npm ci
+docker compose run --rm node-cli npm -D jest
+
+Основы react это компоненты
