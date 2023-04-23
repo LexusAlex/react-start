@@ -8,6 +8,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const date = new Date();
 root.render(
   <React.StrictMode>
-    <Application date={date} />
+    <Application date={date}/>
   </React.StrictMode>
 );
