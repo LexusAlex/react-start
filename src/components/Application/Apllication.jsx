@@ -1,7 +1,13 @@
 import styles from './Application.module.scss';
-import React from "react";
+import React, {useCallback, useMemo, useState} from "react";
 
 function Application(props) {
+  let [count, setCount] = useState(0);
+  let [count2, increment, decrement] = useState(0);
+  let one = useCallback(() => {setCount((currentCount))},[]);
+  //let raiting  = useMemo(() => { return 10;},0);
+  // [stateValue, element]
+  console.log(raiting);
   return (
     <div>
       <h1>Заголовок 1</h1>
@@ -20,6 +26,9 @@ function Application(props) {
             Четвертая часть контента
           </div>
         </div>
+        <button className="btn btn-primary" onClick={() => {setCount(count + 1)}}> + </button>
+        {count}
+        <button className="btn btn-primary" onClick={() => {setCount(count - 1)}}> - </button>
       </div>
     </div>
     //<div className={styles.app}>{props.date.toLocaleDateString()}</div>

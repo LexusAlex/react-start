@@ -14,5 +14,100 @@ props {Любой js код}
 Много специфичных компонентов
 {props.children} - врутренний контент - композиция
 Комбинация компонентов
+onClick
+
+Строительные блоки react
+
+React element - DOM  <button /> <header /> js react элементы dom
+
+Создаем элемент и внутри у него будет контент
+React.createElement('span', {children:'Hello'})
+
+React component - Не повторяйся пере используй
+
+function FirstComponent() {
+  return
+}
+
+FirstComponent = () => {
+ return
+}
+
+Классы не особо любят
+React элементы с маленькой буквы
+React компоненты с большой буквы
+
+Реакт компонент возвращает ReactElement || null
+
+                      React element
+                        /      \
+                       RE      RE
+                      /  \     /  \
+                     RE  RE    RE  RE
+
+Очень важно это другое
+React element tree !== DOM tree
+
+Первый компонент
+
+export const App = () => {
+  return (
+    <div></div>
+    <FilmDetails title={FilmDetails.title} gender={FilmDetails.gender} />
+    <Recomendations />
+    <div />
+  )
+}
+
+JSX это для нас
+
+header
+film detail
+recomendations
+footer
+
+props - это параметры которые можно передать в компонент
+{title, gener}
+
+При изменении props параметров, тогда наш компонент будет перерисован
+
+/components/FilmDetails
+
+export const FilmDetails = ({}) => {
+  let count = 0;
+  return (
+    <div onClick={() => {}}>
+    {title}
+    </div>
+  )
+}
+
+если много props передавайть обьект
+
+хуки это функции с особыми возможностями
+
+useState
+Нельзя вызывать в циклах, во вложенных функциях, в условиях
+
+let state = useState();
+
+Компонент возвращает один элемент
+<React.Fragment>
+много элементов
+</React.Fragment>
+
+<>
+много элементов
+</>
+useState
+useCallback
+useMemo - для сложных вычислений
+У элементов массива должны быть ключи
+
+useReducer() - хук для сложных состояний
+useRef() - можно использовать как хранилище
+ref={ref}
+useEffect(() => {}, [])
+
 
 
