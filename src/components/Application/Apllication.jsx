@@ -8,6 +8,7 @@ import Lists from "../Lists";
 import TestButton from "../TestButton";
 import Form from "react-bootstrap/Form";
 import FormTest from "../FormTest";
+import UseState from "../Hooks/UseState/UseState";
 
 function Application() {
   return (
@@ -24,6 +25,7 @@ function Application() {
           <TestButton></TestButton>
         </div>
         <FormTest></FormTest>
+        <UseState></UseState>
       </Container>
     </>
   );
