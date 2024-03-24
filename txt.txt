@@ -109,5 +109,9 @@ useRef() - можно использовать как хранилище
 ref={ref}
 useEffect(() => {}, [])
 
+Остановился
+
+https://www.youtube.com/watch?v=WbfTHWys150
+
 
 
