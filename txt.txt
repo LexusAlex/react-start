@@ -111,7 +111,7 @@ useEffect(() => {}, [])
 
 Остановился
 
-https://www.youtube.com/watch?v=WbfTHWys150
+https://www.youtube.com/watch?v=D50ZZIlbys8
 
 
 

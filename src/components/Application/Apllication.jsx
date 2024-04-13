@@ -9,6 +9,7 @@ import TestButton from "../TestButton";
 import Form from "react-bootstrap/Form";
 import FormTest from "../FormTest";
 import UseState from "../Hooks/UseState/UseState";
+import UseStateArray from "../Hooks/UseState/UseStateArray";
 
 function Application() {
   return (
@@ -26,6 +27,7 @@ function Application() {
         </div>
         <FormTest></FormTest>
         <UseState></UseState>
+        <UseStateArray></UseStateArray>
       </Container>
     </>
   );
